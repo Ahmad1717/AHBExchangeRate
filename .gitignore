@@ -60,3 +60,16 @@ fastlane/report.xml
 fastlane/Preview.html
 fastlane/screenshots/**/*.png
 fastlane/test_output
+
+Pods/
+Podfile.lock
+
+!*.xcodeproj/xcshareddata/
+*.xcworkspace/xcshareddata/
+!*.xcworkspace/contents.xcworkspacedata
+/*.gcno
+*.xcuserstate
+*.xcsettings
+
+### macOS ###
+*.DS_Store
