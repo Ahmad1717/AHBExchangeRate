@@ -9,11 +9,11 @@ import Foundation
 
 struct AddAssetSectionViewModel {
     let title: String
-    let assets: [AddAssetItemViewModel]
+    var assets: [AddAssetItemViewModel]
 }
 
 struct AddAssetItemViewModel {
     let code: String
     let name: String
-    let isSelected: Bool
+    var isSelected: Bool
 }

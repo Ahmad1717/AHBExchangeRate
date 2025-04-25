@@ -9,16 +9,14 @@ import UIKit
 
 extension AddAssetViewController: UITableViewDataSource, UITableViewDelegate {
 
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return sectionViewModels.count
-    }
+    func numberOfSections(in tableView: UITableView) -> Int { sectionViewModels.count }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return sectionViewModels[section].assets.count
+        sectionViewModels[section].assets.count
     }
 
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return sectionViewModels[section].title
+        sectionViewModels[section].title
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

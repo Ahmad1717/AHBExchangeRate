@@ -9,7 +9,7 @@ import Foundation
 
 struct Headers {
     static func defaultHeaders(authRequired: Bool = false) -> [String: String] {
-        var headers: [String: String] = [
+        let headers: [String: String] = [
             "Content-Type": "application/json",
             "Accept": "application/json"
         ]
