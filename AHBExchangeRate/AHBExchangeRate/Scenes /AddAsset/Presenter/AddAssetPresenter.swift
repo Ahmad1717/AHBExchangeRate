@@ -9,6 +9,7 @@ import UIKit
 
 protocol AddAssetPresentationLogic {
     func presentAssets(_ popular: [ExchangeRateUIModel], _ crypto: [ExchangeRateUIModel], selected: Set<String>)
+    func updateSelection(code: String, selected: Bool)
 }
 
 final class AddAssetPresenter: AddAssetPresentationLogic {
@@ -19,26 +20,20 @@ final class AddAssetPresenter: AddAssetPresentationLogic {
         let popularSection = AddAssetSectionViewModel(
             title: "Popular Assets",
             assets: popular.map {
-                AddAssetItemViewModel(
-                    code: $0.currencyCode,
-                    name: $0.currencyName,
-                    isSelected: selected.contains($0.currencyCode)
-                )
-            }
-        )
+                AddAssetItemViewModel(code: $0.currencyCode, name: $0.currencyName, isSelected: selected.contains($0.currencyCode))
+            })
 
         let cryptoSection = AddAssetSectionViewModel(
             title: "Cryptocurrencies",
             assets: crypto.map {
-                AddAssetItemViewModel(
-                    code: $0.currencyCode,
-                    name: $0.currencyName,
-                    isSelected: selected.contains($0.currencyCode)
-                )
-            }
-        )
+                AddAssetItemViewModel(code: $0.currencyCode, name: $0.currencyName, isSelected: selected.contains($0.currencyCode))
+            })
 
         viewController?.displayAssets([popularSection, cryptoSection])
+    }
+
+    func updateSelection(code: String, selected: Bool) {
+        viewController?.updateAssetSelection(code: code, isSelected: selected)
     }
 }
 
