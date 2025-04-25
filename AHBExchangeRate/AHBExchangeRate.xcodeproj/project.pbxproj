@@ -7,9 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		672CAA88B52C69FE369F60B2 /* Pods_AHBExchangeRateTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E31825B1FF8B2F08C3BD090D /* Pods_AHBExchangeRateTests.framework */; };
-		9C2D9857E8FD4B197B33AEA6 /* Pods_AHBExchangeRate_AHBExchangeRateUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D22A3E18F9C7BF1577D09C76 /* Pods_AHBExchangeRate_AHBExchangeRateUITests.framework */; };
-		CED7577EE35019833CA543D1 /* Pods_AHBExchangeRate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E30C2FBF8E90257194B89B9 /* Pods_AHBExchangeRate.framework */; };
+		EAAF7D902DBAA1500009C50A /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = EAAF7D8F2DBAA1500009C50A /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,15 +28,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0C0CA035F503BAC1240E9C63 /* Pods-AHBExchangeRateTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AHBExchangeRateTests.release.xcconfig"; path = "Target Support Files/Pods-AHBExchangeRateTests/Pods-AHBExchangeRateTests.release.xcconfig"; sourceTree = "<group>"; };
-		1E30C2FBF8E90257194B89B9 /* Pods_AHBExchangeRate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AHBExchangeRate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5D18B53C5702661DDB052DAA /* Pods-AHBExchangeRate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AHBExchangeRate.debug.xcconfig"; path = "Target Support Files/Pods-AHBExchangeRate/Pods-AHBExchangeRate.debug.xcconfig"; sourceTree = "<group>"; };
-		87814714A5DA47754BA9B4DF /* Pods-AHBExchangeRate-AHBExchangeRateUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AHBExchangeRate-AHBExchangeRateUITests.debug.xcconfig"; path = "Target Support Files/Pods-AHBExchangeRate-AHBExchangeRateUITests/Pods-AHBExchangeRate-AHBExchangeRateUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		94197B00AB16ECB2CA1003A4 /* Pods-AHBExchangeRate-AHBExchangeRateUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AHBExchangeRate-AHBExchangeRateUITests.release.xcconfig"; path = "Target Support Files/Pods-AHBExchangeRate-AHBExchangeRateUITests/Pods-AHBExchangeRate-AHBExchangeRateUITests.release.xcconfig"; sourceTree = "<group>"; };
-		96F7B5A89BEE9425269279F9 /* Pods-AHBExchangeRate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AHBExchangeRate.release.xcconfig"; path = "Target Support Files/Pods-AHBExchangeRate/Pods-AHBExchangeRate.release.xcconfig"; sourceTree = "<group>"; };
-		A880ED9D170D19D5603F0FE3 /* Pods-AHBExchangeRateTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AHBExchangeRateTests.debug.xcconfig"; path = "Target Support Files/Pods-AHBExchangeRateTests/Pods-AHBExchangeRateTests.debug.xcconfig"; sourceTree = "<group>"; };
-		D22A3E18F9C7BF1577D09C76 /* Pods_AHBExchangeRate_AHBExchangeRateUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AHBExchangeRate_AHBExchangeRateUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E31825B1FF8B2F08C3BD090D /* Pods_AHBExchangeRateTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AHBExchangeRateTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAAF7B9B2DBA95310009C50A /* AHBExchangeRate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AHBExchangeRate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAAF7BB12DBA95330009C50A /* AHBExchangeRateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AHBExchangeRateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAAF7BBB2DBA95330009C50A /* AHBExchangeRateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AHBExchangeRateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,15 +54,11 @@
 		};
 		EAAF7BB42DBA95330009C50A /* AHBExchangeRateTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-			);
 			path = AHBExchangeRateTests;
 			sourceTree = "<group>";
 		};
 		EAAF7BBE2DBA95330009C50A /* AHBExchangeRateUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-			);
 			path = AHBExchangeRateUITests;
 			sourceTree = "<group>";
 		};
@@ -84,7 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CED7577EE35019833CA543D1 /* Pods_AHBExchangeRate.framework in Frameworks */,
+				EAAF7D902DBAA1500009C50A /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,7 +77,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				672CAA88B52C69FE369F60B2 /* Pods_AHBExchangeRateTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,34 +84,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C2D9857E8FD4B197B33AEA6 /* Pods_AHBExchangeRate_AHBExchangeRateUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		14ED8B13760C7D7C52667737 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				1E30C2FBF8E90257194B89B9 /* Pods_AHBExchangeRate.framework */,
-				D22A3E18F9C7BF1577D09C76 /* Pods_AHBExchangeRate_AHBExchangeRateUITests.framework */,
-				E31825B1FF8B2F08C3BD090D /* Pods_AHBExchangeRateTests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		35155E0E53F3BCFB563DCA7B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				5D18B53C5702661DDB052DAA /* Pods-AHBExchangeRate.debug.xcconfig */,
-				96F7B5A89BEE9425269279F9 /* Pods-AHBExchangeRate.release.xcconfig */,
-				87814714A5DA47754BA9B4DF /* Pods-AHBExchangeRate-AHBExchangeRateUITests.debug.xcconfig */,
-				94197B00AB16ECB2CA1003A4 /* Pods-AHBExchangeRate-AHBExchangeRateUITests.release.xcconfig */,
-				A880ED9D170D19D5603F0FE3 /* Pods-AHBExchangeRateTests.debug.xcconfig */,
-				0C0CA035F503BAC1240E9C63 /* Pods-AHBExchangeRateTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -139,7 +105,6 @@
 				EAAF7BBE2DBA95330009C50A /* AHBExchangeRateUITests */,
 				EAAF7B9C2DBA95310009C50A /* Products */,
 				35155E0E53F3BCFB563DCA7B /* Pods */,
-				14ED8B13760C7D7C52667737 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -160,7 +125,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EAAF7BC42DBA95330009C50A /* Build configuration list for PBXNativeTarget "AHBExchangeRate" */;
 			buildPhases = (
-				699E20F613C06D5AB8CFA8D3 /* [CP] Check Pods Manifest.lock */,
 				EAAF7B972DBA95310009C50A /* Sources */,
 				EAAF7B982DBA95310009C50A /* Frameworks */,
 				EAAF7B992DBA95310009C50A /* Resources */,
@@ -181,7 +145,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EAAF7BC92DBA95330009C50A /* Build configuration list for PBXNativeTarget "AHBExchangeRateTests" */;
 			buildPhases = (
-				EA88267B97E8287653E4A39D /* [CP] Check Pods Manifest.lock */,
 				EAAF7BAD2DBA95330009C50A /* Sources */,
 				EAAF7BAE2DBA95330009C50A /* Frameworks */,
 				EAAF7BAF2DBA95330009C50A /* Resources */,
@@ -203,7 +166,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EAAF7BCC2DBA95330009C50A /* Build configuration list for PBXNativeTarget "AHBExchangeRateUITests" */;
 			buildPhases = (
-				834073A8CD6E4AB3080B064E /* [CP] Check Pods Manifest.lock */,
 				EAAF7BB72DBA95330009C50A /* Sources */,
 				EAAF7BB82DBA95330009C50A /* Frameworks */,
 				EAAF7BB92DBA95330009C50A /* Resources */,
@@ -253,6 +215,9 @@
 			);
 			mainGroup = EAAF7B922DBA95310009C50A;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				EAAF7D8E2DBAA1500009C50A /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = EAAF7B9C2DBA95310009C50A /* Products */;
 			projectDirPath = "";
@@ -288,75 +253,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		699E20F613C06D5AB8CFA8D3 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-AHBExchangeRate-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		834073A8CD6E4AB3080B064E /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-AHBExchangeRate-AHBExchangeRateUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EA88267B97E8287653E4A39D /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-AHBExchangeRateTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EAAF7B972DBA95310009C50A /* Sources */ = {
@@ -398,7 +294,6 @@
 /* Begin XCBuildConfiguration section */
 		EAAF7BC52DBA95330009C50A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5D18B53C5702661DDB052DAA /* Pods-AHBExchangeRate.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -410,8 +305,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -419,15 +314,18 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ExchangeRate.AHBExchangeRate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		EAAF7BC62DBA95330009C50A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 96F7B5A89BEE9425269279F9 /* Pods-AHBExchangeRate.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -439,8 +337,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -448,9 +346,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ExchangeRate.AHBExchangeRate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -575,7 +477,6 @@
 		};
 		EAAF7BCA2DBA95330009C50A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A880ED9D170D19D5603F0FE3 /* Pods-AHBExchangeRateTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -595,7 +496,6 @@
 		};
 		EAAF7BCB2DBA95330009C50A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0C0CA035F503BAC1240E9C63 /* Pods-AHBExchangeRateTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -615,7 +515,6 @@
 		};
 		EAAF7BCD2DBA95330009C50A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 87814714A5DA47754BA9B4DF /* Pods-AHBExchangeRate-AHBExchangeRateUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -633,7 +532,6 @@
 		};
 		EAAF7BCE2DBA95330009C50A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 94197B00AB16ECB2CA1003A4 /* Pods-AHBExchangeRate-AHBExchangeRateUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -689,6 +587,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EAAF7D8E2DBAA1500009C50A /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EAAF7D8F2DBAA1500009C50A /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EAAF7D8E2DBAA1500009C50A /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EAAF7B932DBA95310009C50A /* Project object */;
 }

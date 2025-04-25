@@ -9,19 +9,18 @@ import UIKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-    var window: UIWindow? // ✅ Add this
-
-    func application(
-        _ application: UIApplication,
-        didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
-    ) -> Bool {
-
-        // ✅ Initialize window and rootViewController
+    
+    var window: UIWindow?
+    
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        let exchangeController = ExchangeRatesConfigurator.viewController()
+        let navigationController = UINavigationController(rootViewController: exchangeController)
+        
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = ViewController() // Replace with your VC
+        window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
-
+        
         return true
     }
 }
