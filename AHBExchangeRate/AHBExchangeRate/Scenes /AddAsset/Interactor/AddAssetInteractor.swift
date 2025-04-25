@@ -10,6 +10,7 @@ import Foundation
 protocol AddAssetBusinessLogic {
     func fetchAssets()
     func toggleAssetSelection(code: String)
+    func updateSearch(query: String)
     func saveSelectedAssets()
 }
 
@@ -19,17 +20,28 @@ final class AddAssetInteractor: AddAssetBusinessLogic {
     var worker: AddAssetWorkerProtocol = AddAssetWorker()
 
     var availableCurrencies: [ExchangeRateUIModel] = []
-
-    // Track current selection in memory
-    private lazy var selectedCodes: Set<String> = Set(worker.getSelectedSymbols())
+    private var selectedCodes: Set<String> = []
+    private var currentSearchQuery: String = ""
 
     func fetchAssets() {
+        selectedCodes = Set(worker.getSelectedSymbols())
+        updateSearch(query: "")
+    }
+
+    func updateSearch(query: String) {
+        currentSearchQuery = query.trimmingCharacters(in: .whitespacesAndNewlines).lowercased()
+
         let filtered = availableCurrencies.filter {
             CurrencyMetadata.namesAndSymbols[$0.currencyCode] != nil
         }
 
-        let popularAssets = filtered.filter { !cryptoCodes.contains($0.currencyCode.uppercased()) }
-        let cryptoAssets = filtered.filter { cryptoCodes.contains($0.currencyCode.uppercased()) }
+        let filteredByQuery = currentSearchQuery.isEmpty ? filtered : filtered.filter {
+            $0.currencyCode.lowercased().contains(currentSearchQuery) ||
+            $0.currencyName.lowercased().contains(currentSearchQuery)
+        }
+
+        let popularAssets = filteredByQuery.filter { !cryptoCodes.contains($0.currencyCode.uppercased()) }
+        let cryptoAssets = filteredByQuery.filter { cryptoCodes.contains($0.currencyCode.uppercased()) }
 
         presenter?.presentAssets(popularAssets, cryptoAssets, selected: selectedCodes)
     }
@@ -40,13 +52,10 @@ final class AddAssetInteractor: AddAssetBusinessLogic {
         } else {
             selectedCodes.insert(code)
         }
-
-        fetchAssets() // update UI only
+        presenter?.updateSelection(code: code, selected: selectedCodes.contains(code))
     }
 
     func saveSelectedAssets() {
         worker.saveSelectedSymbols(Array(selectedCodes))
     }
 }
-
-
