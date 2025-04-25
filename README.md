@@ -1,5 +1,17 @@
 # AHBExchangeRate – Real-Time Currency Tracker
 
+🔐 **Configuration Notes**
+
+The API access token is currently stored in Info.plist for simplicity during development.
+
+In a production-ready setup:
+
+All sensitive configurations (e.g., API base URL, access key, host, security settings) should be stored in a centralized configuration file.
+
+This configuration file should be secured in a private repository and fetched securely during the build process (e.g., via CI/CD).
+
+This approach improves security, scalability, and environment management.
+
 ---
 
 ## ⚠️ Token Limitation Notice
